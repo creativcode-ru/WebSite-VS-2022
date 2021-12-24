@@ -1,3 +1,29 @@
-﻿body {
-    background-color:azure;
+﻿html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(5,2,13,1), rgba(35,12,90,1));
+    background-size: 300%;
+    animation: gradient 10s infinite linear;
 }
+/*
+body {
+    background-color:aquamarine;
+}*/
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+/*  Использование CSS-градиентов https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+    Анимированный градиент на чистом CSS https://webdevtips.ru/css/animated-gradient/ 
+*/
